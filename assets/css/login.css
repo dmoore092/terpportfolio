@@ -1,0 +1,75 @@
+/*APPLIES TO login.php and register.php*/
+
+
+/*login.php part*/
+#terp-form{
+    width: 60%;
+    padding: 60px;
+   /* border: 2px solid black; */
+    border-radius: 5px;   
+}
+#email, .password{ /*login.php*/
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    margin: 15px 0px;
+    padding-left: 7px;
+    width: 110%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#terp-form>h2{
+    text-align: center;
+}
+#btn-login, #btn-create-account, #btn-reset, #btn-reset-password{
+    margin-bottom: 10px;
+    width: 115%;
+    background-color: #bb0a1e;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+#btn-recover{
+    height: 30px;
+}
+#persontype{
+    width: 115%;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+.g-recaptcha{
+    transform:scale(0.85); 
+    -webkit-transform:scale(0.85); 
+    transform-origin:0 0; 
+    -webkit-transform-origin:0 0;
+}
+@media only screen and (min-width: 520px) {
+    #terp-form{
+        max-width: 35%;
+        margin: auto;
+    }
+    #btn-login, #btn-create-account, #btn-reset{
+        margin-bottom: 10px;
+        width: 85%;
+        background-color: #bb0a1e;
+        color: white;
+    }
+    #btn-login:hover, #btn-create-account:hover{
+        margin-bottom: 10px;
+        width: 85%;
+        background-color: #be1f1f;
+        color: white;
+    }
+    #persontype{
+        width: 85%;
+        font-size: 1.25em;
+        margin-bottom: 15px;
+    }
+    #email, .password{
+        width: 290px;
+    }
+}

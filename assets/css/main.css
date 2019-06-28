@@ -1,0 +1,359 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body
+{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* Mobile First */
+header{
+    width: 100%;
+}
+body{
+    /* background-image: url("/assets/img/siteBackground.jpg");
+    background-repeat: no-repeat;
+    background-color: black;  
+    background-position: 50% 5%; */
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    position:absolute;
+    min-height: 100%;
+    font-size: 16px;
+}
+body p{
+    line-height: 1.3;
+}
+ul{
+    list-style-type: none;
+}
+hr{
+    margin: 15px 0;
+}
+#body-main{
+    background-color: white;
+    padding: 15px;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 100%;
+}
+#center-area img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.index-image-overlay{
+    position: absolute;
+    text-decoration: none;
+    background-color: #bb0a1e;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    width: 100%;
+    top: 75%;
+    left: 0%;
+}
+#top-bar{
+    display: none;
+}
+.nav{
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    position: relative; 
+    border-bottom: 2px solid #bb0a1e;
+}
+
+.nav li{
+    background-color: black;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+.nav a{
+  color: white;
+  padding: 14px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+#search{
+    background-color: black;
+    border-bottom: 2px solid #bb0a1e;
+    margin-left: 12px;
+}
+#search #textbox{
+    width: 76%;
+    border: 1px solid black;
+}
+#search #button{
+    color: white;
+    background-color: black;
+    padding: 0px;
+    text-align: left;
+    width: 20%;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+#textbox, #button{
+    height: 30px;
+    font-size: 17px;
+}
+.navicon {
+    position: relative;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    background: black;
+    border-radius: 4px;
+    padding: 1em 0 1em 2em;
+    display: inline-block;
+}
+.navicon:before {
+    position: absolute;
+    top: 50%;
+    left: .75em;
+    width: .8em;
+    height: .8em;
+    margin-top: -.4em;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* white navicon */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////5ubmueBsSwAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=);
+}
+.btn-all-buttons{
+    padding:10px 25px; 
+    border: 2px solid black;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  /*  margin-left: 40%;
+    margin-top: 25px;
+    margin-bottom: 15px; */
+    padding: 15px 45px;
+}
+.btn-all-buttons:hover{
+    background-color: #bb0a1e;
+    color: white;
+}
+
+/*COMPONENTS LAYER CSS ID's and Classes*/
+    
+#logo, img{
+    max-width: 100%;
+    max-height: 100%;
+}
+section, article{
+    margin-bottom: 10px;
+}
+#sm-footer{
+    width: 30%;
+}
+@media only screen and (min-width: 520px) {
+    .navicon {display: none;}
+    #body-main, #search-container, .nav>ul{
+      /*  width: 86vw; */
+        max-width: 1000px;
+        margin: auto;
+    }
+    #search-container{
+        height: 30px;
+    }
+    #search-form{
+        position: relative;
+        /* left: 620px; */
+        left: 62%;
+        
+    }
+    #search{
+        display: block;
+        background-color: #bb0a1e;
+        padding: 5px 0;
+        margin-left: 0;
+    }
+
+    #search #button{
+        background-color: black;
+        color: white;
+        width: auto;
+        padding: 0px 10px;
+        border-radius: 0px 4px 4px 0px;
+        border-color: black;
+    }
+    #search #textbox{
+        width: 30%;
+        border-radius: 4px 0 0 4px;
+        border-color: #bb0a1e;
+    }
+    .nav{
+        clear: both;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .nav li{
+        word-wrap: break-word;
+        white-space: normal;
+      /*  border-right: 1px solid #bbb; */
+        font-size: 10px;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .nav a{
+        padding: 10px 6px;
+    }
+    .nav a:hover{
+        background-color: #bb0a1e;
+    }
+    #login{
+        margin-left: 35%;
+    }
+    #center-area{
+        display: flex;
+        justify-content: space-between;
+    }
+    #center-area img{
+        width: 95%;;
+    }
+    .img-container{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .index-image-overlay{
+        position: absolute;
+        text-decoration: none;
+        background-color: #bb0a1e;
+        color: white;
+        padding: 20px 0px 25px 0px;
+        width: 95%;
+        top: 75%;
+        left: 2%;
+    }
+    section, #center-area{
+        width: 70%;
+        margin: auto;
+    }
+    #top-bar{
+        height: 40px;
+        width: 100%;
+        background-color: #36454f;
+        display: block;
+        
+    }
+} /* END OF min-width 520px @media */
+@media only screen and (min-width: 790px) {
+    
+    .nav li{
+        border-right: none;
+    }
+    
+    .nav li:after { /*Creates the vertical line next to nav elements*/
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: inline; /* This will put the pseudo element on its own line. */
+        margin-right: 0 auto; /* This will center the border. */
+        /* width: 80%; Change this to whatever width you want. */
+        padding-right: 10px; /* This creates some space between the element and the border. */
+        border-right: 1px solid #bbb; /* This creates the border. Replace black with whatever color you want. */
+    }
+    #login:after{
+        display: none;
+        /* hides vertical line on login */
+    }
+}/* END OF min-width 790px @media */
+
+@media only screen and (min-width: 1000px) {
+
+    #center-area{
+        display:block;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 0;
+    }
+    #content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    #logo-img{
+        display: block;
+        margin: auto;
+    }
+    section, article{
+        width: 100%;
+        margin: 15px 0px;
+        
+
+    }
+    aside{
+        float: right;
+        max-width: 30%;
+        max-height: 30%;
+        margin-right: 9.5%;
+        margin-top: 10px;
+    }
+    footer{
+        clear: both;
+    }
+    #center-area, #content{
+        padding-left: 10%;
+    }
+    #center-area{
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+    }
+    #center-area img{
+        width: 95%;;
+    }
+    .img-container{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .index-image-overlay{
+        position: absolute;
+        text-decoration: none;
+        background-color: #bb0a1e;
+        color: white;
+        padding: 20px 0px 25px 0px;
+        width: 95%;
+        top: 80%;
+        left: 2.5%;
+    }
+
+}/* END OF min-width 1000px @media */
+
+
+

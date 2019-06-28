@@ -1,0 +1,297 @@
+/*ITCSS CSS layered from general to specific */
+
+/*GENERIC LAYER */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*ELEMENTS LAYER - HTML Tags*/
+
+/* Mobile First */
+header{
+    width: 100%;
+}
+body{
+    /* background-image: url(https://cdn4.sportngin.com/attachments/background_graphic/9705/8030/siteBackground.jpg); */
+    /* background-position: 50% 1.5%; */
+    background-color: black;
+    font-family: "Arial", Helvetica, sans-serif;
+    position:absolute;
+    min-height: 100%;
+    width: 100vw;
+}
+ul{
+    list-style-type: none;
+}
+#body-main{
+    background-color: white;
+    padding: 15px;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 100%;
+}
+#top-bar{
+    display: none;
+}
+.nav{
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    position: relative; 
+    border-bottom: 2px solid #bb0a1e;
+}
+
+.nav li{
+    background-color: black;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+.nav a{
+  color: white;
+  padding: 14px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+#search{
+    background-color: black;
+    border-bottom: 2px solid #bb0a1e;
+}
+#search #textbox{
+    width: 76%;
+}
+#search #button{
+    color: white;
+    background-color: black;
+    padding: 0px;
+    text-align: left;
+    width: 20%;
+    border: none;
+    
+}
+#textbox, #button{
+    height: 30px;
+    font-size: 17px;
+}
+.navicon {
+    position: relative;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    background: black;
+    border-radius: 4px;
+    padding: .5em 0 .5em 2em;
+    display: inline-block;
+}
+.navicon:before {
+    position: absolute;
+    top: 50%;
+    left: .75em;
+    width: .8em;
+    height: .8em;
+    margin-top: -.4em;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* white navicon */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////5ubmueBsSwAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=);
+}
+/*login.php part*/
+#terp-form{
+    width: 70%;
+    margin: auto;
+  /*  background-color: #bb0a1e; */
+    padding: 60px;
+   /* border: 2px solid black; */
+    border-radius: 5px;   
+}
+#email, .password{ /*login.php*/
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    margin: 15px 0px;
+    padding-left: 10px;
+}
+#terp-form>h2{
+    text-align: center;
+}
+#btn-login, #btn-create-account, #btn-register{
+    padding:10px 25px; 
+    background:#fff; 
+    border: 2px solid black;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*end login.php part*/
+@media only screen and (min-width: 520px) {
+    .navicon {display: none;}
+    .nav{
+        clear: both;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        text-align: center;
+        margin-left: 0;
+    }
+    .nav li{
+        word-wrap: break-word;
+        white-space: normal;
+      /*  border-right: 1px solid #bbb; */
+        font-size: 10px;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .nav a{
+        padding: 10px 6px;
+    }
+    .nav a:hover{
+        background-color: #bb0a1e;
+    }
+    #twit{
+        max-height: 67%;
+        max-width: 67%;
+        border-radius: 3px;
+        margin-bottom: 6px;
+    }
+    #search{
+        display: block;
+        background-color: #bb0a1e;
+        padding: 5px 0;
+    }
+    #search-container{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    #search #button{
+        background-color: black;
+        color: white;
+        width: auto;
+        padding: 0px 10px;
+        border-radius: 0px 4px 4px 0px;
+        border-color: black;
+    }
+    #search #textbox{
+        width: 30%;
+        border-radius: 4px 0 0 4px;
+        border-color: #bb0a1e;
+    }
+    #body-main, #search-container, .nav>ul{
+      /*  width: 86vw; */
+        max-width: 1000px;
+        margin: auto;
+    } 
+    section, article, aside, #center-area{
+        width: 60%;
+        margin: auto;
+    }
+    #top-bar{
+        height: 40px;
+        width: 100%;
+        background-color: #23282b;
+        display: block;
+        
+    }
+    /*login.php part*/
+    #terp-form{
+        max-width: 35%;
+        margin: auto;
+    }
+    /*end of login.php part*/
+    /*profile.php part*/
+    #profile-area{
+
+    }
+    figure{
+        float: left;
+        width: 35%;
+        height: 35%;
+    }
+
+    #test{
+        clear: both;
+        float: right;
+        display: flex;
+    }
+
+    /*end of profile.php part*/
+} /* END OF min-width 520px @media */
+@media only screen and (min-width: 790px) {
+    
+    .nav li{
+        border-right: none;
+    }
+    
+    .nav li:after { /*Creates the vertical line next to nav elements*/
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: inline; /* This will put the pseudo element on its own line. */
+        margin-right: 0 auto; /* This will center the border. */
+        width: 80%; /* Change this to whatever width you want. */
+        padding-right: 10px; /* This creates some space between the element and the border. */
+        border-right: 1px solid #bbb; /* This creates the border. Replace black with whatever color you want. */
+    }
+}/* END OF min-width 790px @media */
+
+@media only screen and (min-width: 1000px) {
+
+    #center-area{
+        display:block;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 0;
+    }
+    #content{
+        float:left;
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    #logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    section, article{
+        width: 100%;
+        margin: 15px 0px;
+        
+
+    }
+    aside{
+        float: right;
+        max-width: 30%;
+        max-height: 30%;
+        margin-right: 9.5%;
+        margin-top: 10px;
+    }
+    footer{
+        clear: both;
+    }
+    #center-area, #content{
+        padding-left: 10%;
+    }
+
+}/* END OF min-width 1000px @media */
+
+
+/*COMPONENTS LAYER CSS ID's and Classes*/
+    
+#logo, img{
+    max-width: 100%;
+    max-height: 100%;
+}
+section, article{
+    margin-bottom: 10px;
+}

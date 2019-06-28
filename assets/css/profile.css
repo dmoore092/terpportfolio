@@ -1,0 +1,157 @@
+/*ITCSS CSS layered from general to specific */
+/*APPLIES TO profile.php*/
+/*GENERIC LAYER */
+ .info-box li{
+        margin: 10px 0;
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+.attributes{
+    color: #bb0a1e;
+}
+#hide{
+    display: none;
+}
+#table-wrapper{
+    display: none;
+}
+.search-wrapper{
+    display: block;
+}
+#edit-img{
+    width: 20px;
+    height: auto;
+    display: none;
+}
+#info-box-underline{
+    margin-bottom: 15px;
+}
+th{
+    width: 40%;
+    text-align: left;
+    padding: 2px;
+    margin-top: 35px;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+td{
+    height: 30px;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background: #ccc;
+}
+h2{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#content{
+    width: 80%;
+    margin: auto;
+}
+input, select{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.btnSubmit{
+    background-color: #bb0a1e;
+    color: white;
+    height: 56px;
+    width: 100%;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: #bb0a1e;
+    font-weight: bold;
+}
+#title-wrapper{
+    padding: 5px 0;
+}
+#com-prompt{
+    font-size: .8rem;
+}
+@media only screen and (min-width: 520px) {
+    #profile-area{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    figure{
+        float: left;
+        width: 35%;
+        height: 35%;
+    }
+
+    h2,h3{
+        margin-top: 15px;
+    }
+    #collegeh2{
+        margin-left: 23.5%;
+    }
+    #info-box-container{
+        clear: both;
+        /* display: flex; */
+        width: 95%;
+        /* margin-left: 2%; */
+    }
+    #info-box-container ul{
+        width: 100%;
+    }
+    #info-box-container ul li{
+        display: inline-block;
+        width: 250px;
+        margin: 10px 0 0 0;
+    }
+    #personal-statement{
+        max-width: 60%;
+    }
+    #videos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    #reference-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #info-box-underline{
+        border-bottom: none;
+    }
+
+    #table-wrapper{
+        display: block;
+        width: 90%;
+        margin: auto;
+        background-color: white;
+        padding: 5px;
+        min-height: 400px;
+        border-top: 1px solid black;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    .search-wrapper{
+        display: none;
+    }
+    table{
+        width: 90%;
+        margin: auto;
+    }
+    th{
+        width: 20%;
+        margin: auto;
+        text-align: left;
+        padding: 2px;
+    }
+    .admin-panel{
+        margin-right: 70px;
+    }
+    #checkout-button-plan_FJ7HouBZeAK4zB{
+        max-width: 92%;
+    }
+}

@@ -1,0 +1,133 @@
+/*ITCSS CSS layered from general to specific */
+/*APPLIES TO myinfo.php.php*/
+/*GENERIC LAYER */
+.go-login{
+    width: 90%;
+    /* border: 2px solid black; */
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 1.5rem;
+}
+.redirect-link{
+    position: relative;
+    width: 100px; 
+    margin: auto;
+    top: 50px;
+    background-color: #bb0a1e;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 20px 95px;
+}
+#terp-form{
+    width: 80%;
+    margin: auto;
+   /* border: 2px solid black; */
+    border-radius: 5px; 
+    margin-bottom: 25px;  
+}
+input{
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 25px;
+    width: 100%;
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-text-size-adjust: none;
+}
+select, textarea{
+    width: 300px;
+    height: 28px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#height2, #service{
+    margin-top: 8px;
+}
+textarea{
+    height: 60px;
+    resize: none;
+}
+.hide{
+    display: none;
+}
+#refs{
+    margin-bottom: 25px;
+}
+h3{
+    margin-bottom: 15px;
+}
+.span{
+    color: #bb0a1e;
+
+}
+.servicelabel{
+    margin-top: 15px;
+}
+#btnSubmit{
+    background-color: #bb0a1e;
+    color: white;
+    height: 56px;
+    width: 100%;
+}
+@media only screen and (min-width: 520px){
+    .redirect-link{
+        position: relative;
+        /* left: 300px; */
+    }
+    #terp-form{
+        width: 90%;
+    }
+    h1, h3{
+        text-align: center;
+    } 
+    #refs-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #height{
+        width: 47%;
+    }
+    #height1, #height2{
+        width: 75%;
+    }
+    #height2{
+        margin-left: 23%;
+    }
+    #textarea{
+        height: 100px;
+        width: 400px;
+    }
+    #btnSubmit{
+        background-color: #bb0a1e;
+        color: white;
+        height: 56px;
+        width: 40%;
+        margin-left: 30%;
+    }
+    #btnSubmit:hover{
+        background-color: #be1f1f;
+        color: white;
+    }
+    label{
+        display: block;
+        width: 100%;
+    }
+    input{
+        width: 290px;
+        margin-bottom: 15px;
+    }
+    .showcase{
+        width: 100%;
+    }
+    select{
+        width: 290px;
+    }
+
+}

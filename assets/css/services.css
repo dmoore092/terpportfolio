@@ -1,0 +1,49 @@
+/*ITCSS CSS layered from general to specific */
+/*APPLIES TO services.php*/
+/*GENERIC LAYER */
+
+#services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x:auto;
+} 
+.services{
+    width: 100%;
+}
+
+h1{
+    margin-top: 25px;
+    text-align: center;
+}
+#btnRegister{
+    background-color: #bb0a1e;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+}
+th {
+    text-align: left;
+    background-color: #bb0a1e;
+    color: white;
+}
+@media only screen and (min-width: 520px){
+    #btnRegister{
+        background-color: #bb0a1e;
+        color: white;
+        width: 30%;
+        margin-top: 15px;
+        margin-left: 35%;
+    }
+    #btnRegister:hover{
+        background-color: #be1f1f;
+        color: white;
+    }
+}

@@ -1,0 +1,12 @@
+h1, h2{
+    color: #bb0a1e;
+}
+a{
+    text-decoration: none;
+    color: #bb0a1e;
+    font-weight: bold;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 15px
+}
